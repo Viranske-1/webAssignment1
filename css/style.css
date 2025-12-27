@@ -1,0 +1,82 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+.card{
+ padding: 50px 200px 500px;
+ background-color: rgb(166, 233, 233);
+ border-color: darkslategrey;
+ 
+
+}
+p{
+    padding: 20px 10px;
+    text-align: center;
+    background-color: rgb(171, 171, 217);
+}
+
+
+#btn{
+    background-color: yellow;
+    padding: 10px 20px;
+    align-items:center;
+    font-weight: bold;
+    border-radius: 10px;
+    border-right: 20px;
+    margin: 10px 10px 10px 50px;
+}
+
+#btn:hover{
+   cursor: pointer;
+   background-color: cadetblue;
+
+}
+
+#btn1{
+    background-color: rgb(255, 0, 0);
+    padding: 10px 20px;
+    align-items:center;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+
+#btn1:hover{
+   cursor: pointer;
+   background-color: rgb(35, 27, 119);
+
+}
